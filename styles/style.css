@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/Myriad Pro.ttf");
+}
 body {
   padding: 0;
   margin: 0;
+  font-family: "Myriad Pro", sans-serif;
 }
 
 .page-header {
