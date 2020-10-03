@@ -1,0 +1,16 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass ./styles/style.scss ./styles/style.css"
+  },
+  "keywords": [
+    "smart",
+    "world",
+    "landing"
+  ],
+  "author": "Evgenia Bazhaikina",
+  "license": "ISC"
+}
