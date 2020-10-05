@@ -194,4 +194,35 @@ li {
   background-image: url("../img/icon-messaging.svg");
 }
 
+.bloc-easy-messaging {
+  display: flex;
+  align-items: center;
+  margin-right: 401px;
+  margin-left: 276px;
+}
+.bloc-easy-messaging__decorative--blue-square {
+  background-image: url("../img/Rectangle_2.svg");
+  width: 603px;
+  height: 610px;
+}
+.bloc-easy-messaging__decorative--photo-one {
+  background-image: url("../img/Place_Image1.png");
+  width: 263px;
+  height: 400px;
+}
+.bloc-easy-messaging__decorative--photo-two {
+  background-image: url("../img/Place_image.png");
+  width: 221px;
+  height: 337px;
+}
+.bloc-easy-messaging__text {
+  height: 208px;
+  width: 543px;
+  margin-left: 97px;
+}
+.bloc-easy-messaging__text--pointer {
+  width: 15px;
+  height: 11px;
+}
+
 /*# sourceMappingURL=style.css.map */
