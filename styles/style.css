@@ -197,6 +197,8 @@ li {
 .bloc-easy-messaging {
   display: flex;
   align-items: center;
+  margin-right: 401px;
+  margin-left: 276px;
 }
 .bloc-easy-messaging__decorative--blue-square {
   background-image: url("../img/Rectangle_2.svg");
@@ -216,34 +218,11 @@ li {
 .bloc-easy-messaging__text {
   height: 208px;
   width: 543px;
+  margin-left: 97px;
 }
 .bloc-easy-messaging__text--pointer {
   width: 15px;
   height: 11px;
-}
-
-.bloc-keep-in-touch {
-  display: flex;
-  align-items: center;
-}
-.bloc-keep-in-touch__text {
-  height: 208px;
-  width: 543px;
-}
-.bloc-keep-in-touch__decorative--blue-square {
-  background-image: url("../img/Rectangle_2.svg");
-  width: 603px;
-  height: 610px;
-}
-.bloc-keep-in-touch__decorative--photo-one {
-  background-image: url("../img/bloc-keep-in-touch-photo1.png");
-  width: 263px;
-  height: 400px;
-}
-.bloc-keep-in-touch__decorative--photo-two {
-  background-image: url("../img/bloc-keep-in-touch-photo2.png");
-  width: 221px;
-  height: 337px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -226,8 +226,8 @@ li {
 .bloc-easy-messaging {
     display: flex;
     align-items: center;
-    // margin-right: 401px;
-    // margin-left: 276px;
+    margin-right: 401px;
+    margin-left: 276px;
 
     &__decorative {
 
@@ -253,42 +253,11 @@ li {
     &__text {
         height: 208px;
         width: 543px;
-        // margin-left: 97px;
+        margin-left: 97px;
 
         &--pointer {
             width: 15px;
             height: 11px;
-        }
-    }
-}
-
-.bloc-keep-in-touch {
-    display: flex;
-    align-items: center;
-
-    &__text {
-        height: 208px;
-        width: 543px;
-    }
-
-    &__decorative {
-
-        &--blue-square {
-            background-image: url('../img/Rectangle_2.svg');
-            width: 603px;
-            height: 610px;
-        }
-
-        &--photo-one {
-            background-image: url('../img/bloc-keep-in-touch-photo1.png');
-            width: 263px;
-            height: 400px;
-        }
-
-        &--photo-two {
-            background-image: url('../img/bloc-keep-in-touch-photo2.png');
-            width: 221px;
-            height: 337px;
         }
     }
 }
