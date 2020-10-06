@@ -7,49 +7,56 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="page-header">
-        <div class="page-header__wrapper">
-            <div class="logo">
-                AppSon
+    <div class="home-wrapper">
+        <div class="home">
+            <div class="home__wrapper">
+                <div class="logo">
+                    AppSon
+                </div>
+                <div class="sign-up-and-navigation-wrapper">
+                    <ul class="main-navigation">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <button class="btn btn--sign-up">Sign Up</button>
+                </div>
             </div>
-            <div class="sign-up-and-navigation-wrapper">
-                <ul class="main-navigation">
-                    <li>Home</li>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Pages</li>
-                </ul>
-                <button class="btn btn--sign-up">Sign Up</button>
+            <div class="product-description">
+                <h2 class="product-description__title">
+                    Best Desktop App for You
+                </h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="product-description__btns">
+                    <button class="btn btn--download">
+                        Download
+                    </button>
+                    <button class="btn btn--free-trial">
+                        Free Trial
+                    </button>
+                </div>
+            </div>
+            <div class="phones">
+                <div class="phones__phone--side phones__phone">
+                    <div class="phones__sensors"></div>
+                    <div class="phones__phone-display phones__phone-display--one"></div>
+                </div>
+                <div class="phones__phone--center phones__phone">
+                    <div class="phones__sensors"></div>
+                    <div class="phones__phone-display phones__phone-display--two"></div>
+                </div>
+                <div class="phones__phone--side phones__phone">
+                    <div class="phones__sensors"></div>
+                    <div class="phones__phone-display phones__phone-display--three"></div>
+                </div>
             </div>
         </div>
-        <section class="product-description">
-            <h2>
-                Best Desktop App for You
-            </h2>
-            <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <footer>
-                <button class="btn btn--download">
-                    Download
-                </button>
-                <button class="btn btn--free-trial">
-                    Free Trial
-                </button>
-            </footer>
-        </section>
-        <div class="phones">
-            <div class="phones__phone--side phones__phone">
-                <div class="phones__phone-display phones__phone-display--one"></div>
-            </div>
-            <div class="phones__phone--center phones__phone">
-                <div class="phones__phone-display phones__phone-display--two"></div>
-            </div>
-            <div class="phones__phone--side phones__phone">
-                <div class="phones__phone-display phones__phone-display--three"></div>
-            </div>
-        </div>
-    </header>
+        <button class="btn home__arrow"></button>
+    </div>
+
     <div class="features">
         <div class="features__card">
             <div class="features__icon features__icon--analysis"></div>
@@ -95,7 +102,7 @@
             </div>
         </div>
     </div>
-    <section class="information-about-work">
+    <div class="information-about-work">
         <h2 class="information-about-work__title">
             <div class="information-about-work__title-decorate"></div>
             <div class="information-about-work__title-decorate--right"></div>
@@ -120,7 +127,7 @@
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             </div>
         </div>
-    </section>
+    </div>
     <div class="prising-plan">
         <div class="prising-plan__information">
             <h2>Pricing Plan</h2>
@@ -156,7 +163,7 @@
             <button>Try now</button>
         </div>
     </div>
-    <section class="latest-news">
+    <div class="latest-news">
         <div class="latest-news__heading">
             <h2>
                 <div></div>
@@ -202,7 +209,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 
 </html>

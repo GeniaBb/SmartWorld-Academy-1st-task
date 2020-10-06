@@ -4,15 +4,15 @@
     src: url('../fonts/Myriad\ Pro.ttf');
 }
 
-$header-background-color: #f5fcfd;
+$home-background-color: #f5fcfd;
+$navigation-wrapper-height: 100px;
 $primary-color: #0f7bff;
 $secondary-color: #ffffff;
 $sign-up-btn-color: #0063dd;
 $text-color: #929292;
-$center-phone-height: 979px;
 $side-phone-height: 495px;
 $side-phone-side-margin: -22px;
-$card-margin: 15px;
+$features-card-margin: 15px;
 $icon-work-steps: #dfedff;
 
 body {
@@ -20,25 +20,85 @@ body {
     margin: 0;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 400;
+    width: 1920px;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
 }
 
 li {
     list-style-type: none;
 }
 
-.page-header {
+a, a:active, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    color: $secondary-color;
+    height: 50px;
+
+    &--sign-up {
+        padding: 0 55px;
+        text-transform: uppercase;
+        background-color: $sign-up-btn-color;
+    }
+
+    &--download {
+        padding: 0 49px;
+    }
+
+    &--free-trial {
+        background-color: $home-background-color;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        padding: 0 54px;
+        margin-left: 30px;
+    }
+}
+
+.home-wrapper {
+    position: relative;
+}
+
+.home {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     background-image: url('../img/Shape_1.svg');
-    background-color: $header-background-color;
+    background-color: $home-background-color;
     background-position: right;
     background-size: cover;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    max-height: 1043px;
+    height: 1043px;
     padding: 0 140px 0 140px;
     overflow: hidden;
 
@@ -46,58 +106,61 @@ li {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        height: $navigation-wrapper-height;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+        border: 1px solid #dcdcdc;
+        background-color: #ffffff;
+        background-image: url('../img/arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 3;
     }
 }
 
 .logo {
+    box-sizing: border-box;
+    padding: 35px 37px 33px 25px;
     width: 179px;
     height: 100px;
     border-radius: 0 0 22px 22px;
-    background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #0f7bff;
     color: $secondary-color;
     font-size: 36px;
 }
 
-.btn {
-    border: none;
-    outline: none;
-    border-radius: 25px;
-    background-color: $primary-color;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
-    color: $secondary-color;
-
-    &--sign-up {
-        padding: 20px 55px 19px 55px;
-        text-transform: uppercase;
-        margin-left: 45px;
-        background-color: $sign-up-btn-color;
-    }
-
-    &--download {
-        padding: 19px 49px 19px 49px;
-    }
-
-    &--free-trial {
-        background-color: $header-background-color;
-        color: $primary-color;
-        border: 2px solid $primary-color;
-        padding: 19px 54px 19px 54px;
-        margin-left: 30px;
-    }
-}
 
 .product-description {
+    margin-top: 107px;
     text-align: center;
     max-width: 622px;
     margin-bottom: 80px;
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 38px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        color: #333333;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 24px;
+    }
 }
 
 .main-navigation {
+    margin-right: 53px;
     display: flex;
     text-transform: uppercase;
     font-family: Quicksand;
@@ -108,11 +171,17 @@ li {
     li {
         margin-left: 45px;
     }
+
+    li:hover, .active{
+        color: rgb(21, 126, 255);
+    }
 }
 
 .sign-up-and-navigation-wrapper {
+    height: 50px;
+    margin-top: 25px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .text {
@@ -120,34 +189,50 @@ li {
     font-family: "Myriad Pro";
     font-size: 16px;
     font-weight: 400;
+    line-height: 27px;
 }
 
 .phones {
     display: flex;
 
+    &__sensors {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../img/Sensors.svg');
+        width: 69px;
+        height: 18px;
+    }
+
     &__phone-display {
         background-repeat: no-repeat;
         background-size: cover;
-    
+        position: absolute;
+
         &--one {
             background-image: url('../img/Place_screen.png');
             min-height: $side-phone-height;
             width: 231px;
             position: relative;
-            right: 3px;
+            left: 14px;
+            top: 11px;
         }
 
         &--two {
             background-image: url('../img/Place_Your_screen1.png');
-            min-height: $center-phone-height;
+            width: 312px;
+            height: 979px;
+            top: 15px;
+            left: 19px;
         }
 
         &--three {
             background-image: url('../img/Place_your_screen.png');
             min-height: $side-phone-height;
             width: 231px;
-            position: relative;
-            right: 2px;
+            top: 11px;
+            right: 13px;
         }
     }
 
@@ -157,14 +242,18 @@ li {
         box-shadow: 0 0 62px rgba(142, 142, 142, 0.44);
         border-radius: 40px;
         background-repeat: no-repeat;
+        position: relative;
 
         &--side {
             width: 258px;
             height: 517px;
             background-image: url('../img/device-side.png');
             z-index: 1;
-            padding: 11px 13px 11px 18px;
             margin-top: 90px;
+
+            .phonse__sensors {
+                // Доделать
+            }
         }
 
         &--center {
@@ -191,8 +280,8 @@ li {
             box-shadow: 0 0 25px #f0f0f0;
             border-radius: 5px;
             background-color: #ffffff;
-            margin-left: $card-margin;
-            margin-right: $card-margin;
+            margin-left: $features-card-margin;
+            margin-right: $features-card-margin;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -259,7 +348,6 @@ li {
     &__text {
         height: 208px;
         width: 543px;
-        // margin-left: 97px;
 
         &--pointer {
             width: 15px;

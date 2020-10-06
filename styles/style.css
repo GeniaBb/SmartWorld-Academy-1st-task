@@ -8,13 +8,69 @@ body {
   margin: 0;
   font-family: "Myriad Pro", sans-serif;
   font-weight: 400;
+  width: 1920px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
 }
 
 li {
   list-style-type: none;
 }
 
-.page-header {
+a, a:active, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f7bff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  height: 50px;
+}
+.btn--sign-up {
+  padding: 0 55px;
+  text-transform: uppercase;
+  background-color: #0063dd;
+}
+.btn--download {
+  padding: 0 49px;
+}
+.btn--free-trial {
+  background-color: #f5fcfd;
+  color: #0f7bff;
+  border: 2px solid #0f7bff;
+  padding: 0 54px;
+  margin-left: 30px;
+}
+
+.home-wrapper {
+  position: relative;
+}
+
+.home {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -25,63 +81,64 @@ li {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  max-height: 1043px;
+  height: 1043px;
   padding: 0 140px 0 140px;
   overflow: hidden;
 }
-.page-header__wrapper {
+.home__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 100px;
+}
+.home__arrow {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
 }
 
 .logo {
+  box-sizing: border-box;
+  padding: 35px 37px 33px 25px;
   width: 179px;
   height: 100px;
   border-radius: 0 0 22px 22px;
   background-color: #0f7bff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #ffffff;
   font-size: 36px;
 }
 
-.btn {
-  border: none;
-  outline: none;
-  border-radius: 25px;
-  background-color: #0f7bff;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffffff;
-}
-.btn--sign-up {
-  padding: 20px 55px 19px 55px;
-  text-transform: uppercase;
-  margin-left: 45px;
-  background-color: #0063dd;
-}
-.btn--download {
-  padding: 19px 49px 19px 49px;
-}
-.btn--free-trial {
-  background-color: #f5fcfd;
-  color: #0f7bff;
-  border: 2px solid #0f7bff;
-  padding: 19px 54px 19px 54px;
-  margin-left: 30px;
-}
-
 .product-description {
+  margin-top: 107px;
   text-align: center;
   max-width: 622px;
   margin-bottom: 80px;
 }
+.product-description__btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+.product-description__title {
+  margin-bottom: 32px;
+  color: #333333;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 24px;
+}
 
 .main-navigation {
+  margin-right: 53px;
   display: flex;
   text-transform: uppercase;
   font-family: Quicksand;
@@ -92,10 +149,15 @@ li {
 .main-navigation li {
   margin-left: 45px;
 }
+.main-navigation li:hover, .main-navigation .active {
+  color: #157eff;
+}
 
 .sign-up-and-navigation-wrapper {
+  height: 50px;
+  margin-top: 25px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .text {
@@ -103,32 +165,45 @@ li {
   font-family: "Myriad Pro";
   font-size: 16px;
   font-weight: 400;
+  line-height: 27px;
 }
 
 .phones {
   display: flex;
 }
+.phones__sensors {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/Sensors.svg");
+  width: 69px;
+  height: 18px;
+}
 .phones__phone-display {
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
 }
 .phones__phone-display--one {
   background-image: url("../img/Place_screen.png");
   min-height: 495px;
   width: 231px;
   position: relative;
-  right: 3px;
+  left: 14px;
+  top: 11px;
 }
 .phones__phone-display--two {
   background-image: url("../img/Place_Your_screen1.png");
-  min-height: 979px;
+  width: 312px;
+  height: 979px;
+  top: 15px;
+  left: 19px;
 }
 .phones__phone-display--three {
   background-image: url("../img/Place_your_screen.png");
   min-height: 495px;
   width: 231px;
-  position: relative;
-  right: 2px;
+  top: 11px;
+  right: 13px;
 }
 .phones__phone {
   box-sizing: border-box;
@@ -136,13 +211,13 @@ li {
   box-shadow: 0 0 62px rgba(142, 142, 142, 0.44);
   border-radius: 40px;
   background-repeat: no-repeat;
+  position: relative;
 }
 .phones__phone--side {
   width: 258px;
   height: 517px;
   background-image: url("../img/device-side.png");
   z-index: 1;
-  padding: 11px 13px 11px 18px;
   margin-top: 90px;
 }
 .phones__phone--center {
@@ -257,7 +332,7 @@ li {
 .information-about-work__decorative-line {
   width: 680px;
   height: 1px;
-  border: 1px dotted #0f7bff;
+  border: 1px solid #0f7bff;
 }
 .information-about-work__icon {
   background-color: #dfedff;
@@ -283,7 +358,7 @@ li {
 .prising-plan__information {
   width: 343px;
 }
-.prising-plan__price {
+.prising-plan__card {
   width: 360px;
   height: 576px;
   box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
