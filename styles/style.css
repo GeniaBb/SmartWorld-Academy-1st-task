@@ -155,9 +155,11 @@ li {
 }
 
 .features {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   padding-top: 165px;
+  height: 635px;
 }
 .features__card {
   width: 360px;
@@ -198,17 +200,20 @@ li {
   display: flex;
   align-items: center;
 }
-.bloc-easy-messaging__decorative--blue-square {
+.bloc-easy-messaging__blue-square {
   background-image: url("../img/Rectangle_2.svg");
   width: 603px;
   height: 610px;
 }
-.bloc-easy-messaging__decorative--photo-one {
+.bloc-easy-messaging__decorative-photo--one {
+  position: relative;
+  top: 130px;
+  left: 190px;
   background-image: url("../img/Place_Image1.png");
   width: 263px;
   height: 400px;
 }
-.bloc-easy-messaging__decorative--photo-two {
+.bloc-easy-messaging__decorative-photo--two {
   background-image: url("../img/Place_image.png");
   width: 221px;
   height: 337px;
@@ -230,20 +235,84 @@ li {
   height: 208px;
   width: 543px;
 }
-.bloc-keep-in-touch__decorative--blue-square {
+.bloc-keep-in-touch__blue-square {
   background-image: url("../img/Rectangle_2.svg");
   width: 603px;
   height: 610px;
 }
-.bloc-keep-in-touch__decorative--photo-one {
+.bloc-keep-in-touch__decorative-photo--one {
   background-image: url("../img/bloc-keep-in-touch-photo1.png");
   width: 263px;
   height: 400px;
 }
-.bloc-keep-in-touch__decorative--photo-two {
+.bloc-keep-in-touch__decorative-photo--two {
   background-image: url("../img/bloc-keep-in-touch-photo2.png");
   width: 221px;
   height: 337px;
+}
+
+.information-about-work__work-steps {
+  display: flex;
+}
+.information-about-work__decorative-line {
+  width: 680px;
+  height: 1px;
+  border: 1px dotted #0f7bff;
+}
+.information-about-work__icon {
+  background-color: #dfedff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.information-about-work__icon--account {
+  background-image: url("../img/bloc-work-steps_img-account.svg");
+}
+.information-about-work__icon--email {
+  background-image: url("../img/bloc-work-steps_img-email.svg");
+}
+.information-about-work__icon--results {
+  background-image: url("../img/bloc-work-steps_img-results.svg");
+}
+
+.prising-plan {
+  display: flex;
+}
+.prising-plan__information {
+  width: 343px;
+}
+.prising-plan__price {
+  width: 360px;
+  height: 576px;
+  box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.prising-plan__icon {
+  width: 100px;
+  height: 100px;
+  background-color: #dfedff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.prising-plan__icon--standard {
+  background-image: url("../img/pricing-plan_standard.svg");
+}
+.prising-plan__icon--premium {
+  background-image: url("../img/pricing-plan_premium.svg");
+}
+.prising-plan__sign {
+  width: 10px;
+  height: 16px;
+  color: #0f7bff;
+}
+.prising-plan__sum {
+  width: 83px;
+  height: 24px;
+  color: #0f7bff;
 }
 
 /*# sourceMappingURL=style.css.map */

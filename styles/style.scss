@@ -13,6 +13,7 @@ $center-phone-height: 979px;
 $side-phone-height: 495px;
 $side-phone-side-margin: -22px;
 $card-margin: 15px;
+$icon-work-steps: #dfedff;
 
 body {
     padding: 0;
@@ -178,9 +179,11 @@ li {
 }
 
 .features {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     padding-top: 165px;
+    height: 635px;
 
         &__card {
             width: 360px;
@@ -229,21 +232,24 @@ li {
     // margin-right: 401px;
     // margin-left: 276px;
 
-    &__decorative {
+    &__blue-square {
+        background-image: url('../img/Rectangle_2.svg');
+        width: 603px;
+        height: 610px;
+    }
 
-        &--blue-square {
-            background-image: url('../img/Rectangle_2.svg');
-            width: 603px;
-            height: 610px;
-        }
-    
-        &--photo-one {
+    &__decorative-photo {
+
+        &--one {
+            position: relative;
+            top: 130px;
+            left: 190px;
             background-image: url('../img/Place_Image1.png');
             width: 263px;
             height: 400px;
         }
     
-        &--photo-two {
+        &--two {
             background-image: url('../img/Place_image.png');
             width: 221px;
             height: 337px;
@@ -271,24 +277,115 @@ li {
         width: 543px;
     }
 
-    &__decorative {
+    &__blue-square {
+        background-image: url('../img/Rectangle_2.svg');
+        width: 603px;
+        height: 610px;
+    }
 
-        &--blue-square {
-            background-image: url('../img/Rectangle_2.svg');
-            width: 603px;
-            height: 610px;
-        }
+    &__decorative-photo {
 
-        &--photo-one {
+        &--one {
             background-image: url('../img/bloc-keep-in-touch-photo1.png');
             width: 263px;
             height: 400px;
         }
 
-        &--photo-two {
+        &--two {
             background-image: url('../img/bloc-keep-in-touch-photo2.png');
             width: 221px;
             height: 337px;
         }
+    }
+}
+
+.information-about-work {
+
+    &__work-steps {
+        display: flex;
+    }
+
+    &__decorative-line {
+        width: 680px;
+        height: 1px;
+        border: 1px dotted $primary-color;
+    }
+
+    &__icon {
+        background-color: $icon-work-steps;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--account {
+            background-image: url('../img/bloc-work-steps_img-account.svg');
+        }
+
+        &--email {
+            background-image: url('../img/bloc-work-steps_img-email.svg');
+        }
+
+        &--results {
+            background-image: url('../img/bloc-work-steps_img-results.svg');
+        }
+    }
+}
+
+.prising-plan {
+    display: flex;
+
+    &__information {
+        width: 343px;
+    }
+
+    &__price {
+        width: 360px;
+        height: 576px;
+        box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        &--standard {
+
+        }
+        
+        &--premium {
+
+        }
+    }
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        background-color: #dfedff;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--standard {
+            background-image: url('../img/pricing-plan_standard.svg');
+        }
+
+        &--premium {
+            background-image: url('../img/pricing-plan_premium.svg');
+        }
+    }
+
+    &__sign {
+        width: 10px;
+        height: 16px;
+        color: $primary-color;
+        
+        &--dollar {
+
+        }
+    }
+
+    &__sum {
+        width: 83px;
+        height: 24px;
+        color: $primary-color;
     }
 }
