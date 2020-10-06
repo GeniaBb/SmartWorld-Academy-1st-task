@@ -315,4 +315,17 @@ li {
   color: #0f7bff;
 }
 
+.latest-news__list-news__decoration-photo {
+  background-image: url("../img/latest-news__decoration-photo.png");
+}
+.latest-news__list-news__all-photo--one {
+  background-image: url("../img/latest-news__all-photo_1.png");
+}
+.latest-news__list-news__all-photo--two {
+  background-image: url("../img/latest-news__all-photo_2.png");
+}
+.latest-news__list-news__all-photo--three {
+  background-image: url("../img/latest-news__all-photo_3.png");
+}
+
 /*# sourceMappingURL=style.css.map */

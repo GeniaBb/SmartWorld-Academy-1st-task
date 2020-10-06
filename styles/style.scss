@@ -308,7 +308,7 @@ li {
     &__decorative-line {
         width: 680px;
         height: 1px;
-        border: 1px dotted $primary-color;
+        border: 1px solid $primary-color;
     }
 
     &__icon {
@@ -340,20 +340,12 @@ li {
         width: 343px;
     }
 
-    &__price {
+    &__card {
         width: 360px;
         height: 576px;
         box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
         border-radius: 5px;
         background-color: #ffffff;
-
-        &--standard {
-
-        }
-        
-        &--premium {
-
-        }
     }
 
     &__icon {
@@ -377,7 +369,7 @@ li {
         width: 10px;
         height: 16px;
         color: $primary-color;
-        
+
         &--dollar {
 
         }
@@ -387,5 +379,42 @@ li {
         width: 83px;
         height: 24px;
         color: $primary-color;
+    }
+}
+
+.latest-news {
+
+    &__heading {
+
+    }
+
+    &__list-news {
+
+        &--bloc-one {
+
+        }
+
+        &__decoration-photo {
+            background-image: url('../img/latest-news__decoration-photo.png');
+        }
+
+        &--bloc-two {
+
+        }
+
+        &__all-photo {
+
+            &--one {
+                background-image: url('../img/latest-news__all-photo_1.png');
+            }
+
+            &--two {
+                background-image: url('../img/latest-news__all-photo_2.png');
+            }
+
+            &--three {
+                background-image: url('../img/latest-news__all-photo_3.png');
+            }
+        }
     }
 }
