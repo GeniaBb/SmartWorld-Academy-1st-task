@@ -190,6 +190,10 @@ a, a:active, a:hover, a:visited {
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
+
+    &__bloc-easy-messaging {
+        margin-top: 33px;
+    }
 }
 
 .phones {
@@ -301,7 +305,7 @@ a, a:active, a:hover, a:visited {
         &__text {
             margin: 15px;
         }
-        
+
         &__icon {
             height: 70px;
             width: 70px;
@@ -330,6 +334,7 @@ a, a:active, a:hover, a:visited {
 .bloc-easy-messaging {
     display: flex;
     align-items: center;
+    justify-content: center;
     // margin-right: 401px;
     // margin-left: 276px;
 
@@ -354,12 +359,16 @@ a, a:active, a:hover, a:visited {
             background-image: url('../img/Place_image.png');
             width: 221px;
             height: 337px;
+            left: 178px;
+            position: relative;
+            top: 32px;
         }
     }
 
     &__text {
         height: 208px;
         width: 543px;
+        left: 97px;
 
         &--pointer {
             width: 15px;
@@ -371,10 +380,12 @@ a, a:active, a:hover, a:visited {
 .bloc-keep-in-touch {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &__text {
         height: 208px;
         width: 543px;
+        margin-right: 109px;
     }
 
     &__blue-square {
@@ -384,17 +395,24 @@ a, a:active, a:hover, a:visited {
     }
 
     &__decorative-photo {
+        margin-left: 11px;
 
         &--one {
             background-image: url('../img/bloc-keep-in-touch-photo1.png');
             width: 263px;
             height: 400px;
+            position: relative;
+            top: 130px;
+            left: 11px;
         }
 
         &--two {
             background-image: url('../img/bloc-keep-in-touch-photo2.png');
             width: 221px;
             height: 337px;
+            position: relative;
+            margin-left: 189px;
+            top: 32px;
         }
     }
 }

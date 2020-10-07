@@ -167,6 +167,9 @@ a, a:active, a:hover, a:visited {
   font-weight: 400;
   line-height: 27px;
 }
+.text__bloc-easy-messaging {
+  margin-top: 33px;
+}
 
 .phones {
   display: flex;
@@ -286,6 +289,7 @@ a, a:active, a:hover, a:visited {
 .bloc-easy-messaging {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .bloc-easy-messaging__blue-square {
   background-image: url("../img/Rectangle_2.svg");
@@ -304,10 +308,14 @@ a, a:active, a:hover, a:visited {
   background-image: url("../img/Place_image.png");
   width: 221px;
   height: 337px;
+  left: 178px;
+  position: relative;
+  top: 32px;
 }
 .bloc-easy-messaging__text {
   height: 208px;
   width: 543px;
+  left: 97px;
 }
 .bloc-easy-messaging__text--pointer {
   width: 15px;
@@ -317,25 +325,36 @@ a, a:active, a:hover, a:visited {
 .bloc-keep-in-touch {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .bloc-keep-in-touch__text {
   height: 208px;
   width: 543px;
+  margin-right: 109px;
 }
 .bloc-keep-in-touch__blue-square {
   background-image: url("../img/Rectangle_2.svg");
   width: 603px;
   height: 610px;
 }
+.bloc-keep-in-touch__decorative-photo {
+  margin-left: 11px;
+}
 .bloc-keep-in-touch__decorative-photo--one {
   background-image: url("../img/bloc-keep-in-touch-photo1.png");
   width: 263px;
   height: 400px;
+  position: relative;
+  top: 130px;
+  left: 11px;
 }
 .bloc-keep-in-touch__decorative-photo--two {
   background-image: url("../img/bloc-keep-in-touch-photo2.png");
   width: 221px;
   height: 337px;
+  position: relative;
+  margin-left: 189px;
+  top: 32px;
 }
 
 .information-about-work__work-steps {
