@@ -58,7 +58,7 @@ a, a:active, a:hover, a:visited {
 .btn--download {
   padding: 0 49px;
 }
-.btn--free-trial {
+.btn--secondary {
   background-color: #f5fcfd;
   color: #0f7bff;
   border: 2px solid #0f7bff;
@@ -425,24 +425,48 @@ a, a:active, a:hover, a:visited {
 
 .prising-plan {
   display: flex;
+  justify-content: center;
 }
 .prising-plan__information {
   width: 343px;
 }
 .prising-plan__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 360px;
   height: 576px;
   box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
   border-radius: 5px;
   background-color: #ffffff;
 }
+.prising-plan__card .btn {
+  width: 165px;
+  padding: 0;
+}
+.prising-plan__toggler {
+  display: flex;
+  width: 330px;
+}
+.prising-plan__toggle-btn {
+  width: 165px;
+  padding: 0;
+  margin: 0;
+}
+.prising-plan__toggle-btn--left {
+  border-radius: 25px 0 0 25px;
+}
 .prising-plan__icon {
-  width: 100px;
-  height: 100px;
-  background-color: #dfedff;
+  width: 75px;
+  height: 75px;
+  border: 12px solid #dfedff;
+  background-color: #cfe4fe;
   border-radius: 50%;
+  background-size: 55px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 29px;
 }
 .prising-plan__icon--standard {
   background-image: url("../img/pricing-plan_standard.svg");
@@ -450,10 +474,19 @@ a, a:active, a:hover, a:visited {
 .prising-plan__icon--premium {
   background-image: url("../img/pricing-plan_premium.svg");
 }
+.prising-plan__title {
+  padding-bottom: 30px;
+  width: 165px;
+  border-bottom: 1px solid #e0e0e0;
+}
 .prising-plan__sign {
-  width: 10px;
-  height: 16px;
+  font-family: Quicksand;
+  font-weight: 500;
   color: #0f7bff;
+  font-size: 32px;
+}
+.prising-plan__sign--dollar {
+  font-size: 16px;
 }
 .prising-plan__sum {
   width: 83px;

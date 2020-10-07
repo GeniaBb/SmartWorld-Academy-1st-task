@@ -74,7 +74,7 @@ a, a:active, a:hover, a:visited {
         padding: 0 49px;
     }
 
-    &--free-trial {
+    &--secondary {
         background-color: $home-background-color;
         color: $primary-color;
         border: 2px solid $primary-color;
@@ -316,7 +316,7 @@ a, a:active, a:hover, a:visited {
             margin: 15px;
 
             &--analysis {
-                background-color: #dfedff;
+                background-color: $icon-work-steps;
                 background-image: url('../img/icon-analys.svg');
             }
 
@@ -496,26 +496,53 @@ a, a:active, a:hover, a:visited {
 
 .prising-plan {
     display: flex;
+    justify-content: center;
 
     &__information {
         width: 343px;
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 360px;
         height: 576px;
         box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
         border-radius: 5px;
         background-color: #ffffff;
+
+        .btn {
+            width: 165px;
+            padding: 0;
+        }
+    }
+    &__toggler {
+        display: flex;
+        width: 330px;
+    }
+
+    &__toggle-btn {
+        width: 165px;
+        padding: 0;
+        margin: 0;
+
+        &--left {
+            border-radius: 25px 0 0 25px;
+        }
     }
 
     &__icon {
-        width: 100px;
-        height: 100px;
-        background-color: #dfedff;
+        width: 75px;
+        height: 75px;
+        border: 12px solid $icon-work-steps;
+        background-color: #cfe4fe;
         border-radius: 50%;
+        background-size: 55px;
         background-repeat: no-repeat;
         background-position: center;
+        margin-bottom: 29px;
 
         &--standard {
             background-image: url('../img/pricing-plan_standard.svg');
@@ -526,13 +553,20 @@ a, a:active, a:hover, a:visited {
         }
     }
 
+    &__title {
+        padding-bottom: 30px;
+        width: 165px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
     &__sign {
-        width: 10px;
-        height: 16px;
+        font-family: Quicksand;
+        font-weight: 500;
         color: $primary-color;
+        font-size: 32px;
 
         &--dollar {
-
+            font-size: 16px;
         }
     }
 

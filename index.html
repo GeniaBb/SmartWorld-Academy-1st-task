@@ -34,7 +34,7 @@
                     <button class="btn btn--download">
                         Download
                     </button>
-                    <button class="btn btn--free-trial">
+                    <button class="btn btn--secondary">
                         Free Trial
                     </button>
                 </div>
@@ -132,10 +132,14 @@
         <div class="prising-plan__information">
             <h2>Pricing Plan</h2>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+            <div class="prising-plan__toggler">
+                <button class="prising-plan__toggle-btn prising-plan__toggle-btn--left btn">Monthly</button>
+                <button class="prising-plan__toggle-btn prising-plan__toggle-btn--right btn btn--secondary">Yearly</button>
+            </div>
         </div>
         <div class="prising-plan__card">
             <div class="prising-plan__icon prising-plan__icon--standard"><div></div></div>
-            <h3>Standard</h3>
+            <h3 class="prising-plan__title">Standard</h3>
             <ul class="text">
                 <li>2gb Hosting</li>
                 <li>10 Custom Domain</li>
@@ -143,12 +147,14 @@
                 <li>50 gb Bandwith</li>
                 <li>Free Support</li>
             </ul>
-            <span class="prising-plan__sign prising-plan__sign--dollar">$<span class="prising-plan__sum">19.00</span></span>
+            <span class="prising-plan__sign">
+                <span class=" prising-plan__sign--dollar">$</span>19.00    
+            </span>
             <button class="btn">Try now</button>
         </div>
         <div class="prising-plan__card">
             <div class="prising-plan__icon prising-plan__icon--premium"></div>
-            <h3>Premium</h3>
+            <h3 class="prising-plan__title">Premium</h3>
             <ul class="text">
                 <li>2gb Hosting</li>
                 <li>10 Custom Domain</li>
@@ -156,11 +162,10 @@
                 <li>50 gb Bandwith</li>
                 <li>Free Support</li>
             </ul>
-            <span class="prising-plan__sign prising-plan__sign--dollar">
-                $
+            <span class="prising-plan__sign">
+                <span class=" prising-plan__sign--dollar">$</span>19.00    
             </span>
-                <span class="prising-plan__sum">19.00</span>
-            <button>Try now</button>
+            <button class="btn btn--secondary">Try now</button>
         </div>
     </div>
     <div class="latest-news">
