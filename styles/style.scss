@@ -282,6 +282,7 @@ a, a:active, a:hover, a:visited {
     justify-content: center;
     padding-top: 165px;
     height: 635px;
+    background-color: $home-background-color;
 
         &__card {
             width: 360px;
@@ -368,7 +369,7 @@ a, a:active, a:hover, a:visited {
     &__text {
         height: 208px;
         width: 543px;
-        left: 97px;
+        margin-left: 97px;
 
         &--pointer {
             width: 15px;
@@ -418,16 +419,52 @@ a, a:active, a:hover, a:visited {
 }
 
 .information-about-work {
+    box-sizing: border-box;
+    height: 646px;
+    display: flex;
+    background-color: $home-background-color;
+    flex-direction: column;
+    align-items: center;
+    padding: 151px 0 129px 0;
 
-    &__work-steps {
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    .text {
+        width: 731px;
+        text-align: center;
+    }
+
+    &__cards-wrapper {
+        margin-top: 48px;
+        position: relative;
         display: flex;
+        width: 1122px;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .text {
+            width: 100%;
+        }
+
     }
 
     &__decorative-line {
         width: 680px;
-        height: 1px;
+        z-index: 0;
+        height: 0;
         border: 1px solid $primary-color;
         position: absolute;
+        top: 54px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__icon {
@@ -437,6 +474,11 @@ a, a:active, a:hover, a:visited {
         border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center;
+        z-index: 1;
+        
+        &__card-title {
+            margin: 31px 0 29px;
+        }
 
         &--account {
             background-image: url('../img/bloc-work-steps_img-account.svg');

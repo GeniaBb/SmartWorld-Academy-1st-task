@@ -244,6 +244,7 @@ a, a:active, a:hover, a:visited {
   justify-content: center;
   padding-top: 165px;
   height: 635px;
+  background-color: #f5fcfd;
 }
 .features__card {
   width: 360px;
@@ -315,7 +316,7 @@ a, a:active, a:hover, a:visited {
 .bloc-easy-messaging__text {
   height: 208px;
   width: 543px;
-  left: 97px;
+  margin-left: 97px;
 }
 .bloc-easy-messaging__text--pointer {
   width: 15px;
@@ -357,14 +358,48 @@ a, a:active, a:hover, a:visited {
   top: 32px;
 }
 
-.information-about-work__work-steps {
+.information-about-work {
+  box-sizing: border-box;
+  height: 646px;
   display: flex;
+  background-color: #f5fcfd;
+  flex-direction: column;
+  align-items: center;
+  padding: 151px 0 129px 0;
+}
+.information-about-work__title {
+  margin-bottom: 39px;
+}
+.information-about-work .text {
+  width: 731px;
+  text-align: center;
+}
+.information-about-work__cards-wrapper {
+  margin-top: 48px;
+  position: relative;
+  display: flex;
+  width: 1122px;
+  justify-content: space-between;
+}
+.information-about-work__card {
+  width: 342px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.information-about-work__card .text {
+  width: 100%;
 }
 .information-about-work__decorative-line {
   width: 680px;
-  height: 1px;
+  z-index: 0;
+  height: 0;
   border: 1px solid #0f7bff;
   position: absolute;
+  top: 54px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .information-about-work__icon {
   background-color: #dfedff;
@@ -373,6 +408,10 @@ a, a:active, a:hover, a:visited {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
+}
+.information-about-work__icon__card-title {
+  margin: 31px 0 29px;
 }
 .information-about-work__icon--account {
   background-image: url("../img/bloc-work-steps_img-account.svg");
