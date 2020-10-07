@@ -203,6 +203,11 @@ a, a:active, a:hover, a:visited {
         background-image: url('../img/Sensors.svg');
         width: 69px;
         height: 18px;
+        margin-top: 15px;
+
+        &--center {
+            margin-top: 15px;
+        }
     }
 
     &__phone-display {
@@ -293,12 +298,17 @@ a, a:active, a:hover, a:visited {
             }
         }
 
+        &__text {
+            margin: 15px;
+        }
+        
         &__icon {
             height: 70px;
             width: 70px;
             border-radius: 50%;
             background-repeat: no-repeat;
             background-position: center;
+            margin: 15px;
 
             &--analysis {
                 background-color: #dfedff;
@@ -399,6 +409,7 @@ a, a:active, a:hover, a:visited {
         width: 680px;
         height: 1px;
         border: 1px solid $primary-color;
+        position: absolute;
     }
 
     &__icon {

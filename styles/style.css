@@ -179,6 +179,10 @@ a, a:active, a:hover, a:visited {
   background-image: url("../img/Sensors.svg");
   width: 69px;
   height: 18px;
+  margin-top: 15px;
+}
+.phones__sensors--center {
+  margin-top: 15px;
 }
 .phones__phone-display {
   background-repeat: no-repeat;
@@ -255,12 +259,16 @@ a, a:active, a:hover, a:visited {
 .features__card--center {
   margin-top: 50px;
 }
+.features__text {
+  margin: 15px;
+}
 .features__icon {
   height: 70px;
   width: 70px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 15px;
 }
 .features__icon--analysis {
   background-color: #dfedff;
@@ -337,6 +345,7 @@ a, a:active, a:hover, a:visited {
   width: 680px;
   height: 1px;
   border: 1px solid #0f7bff;
+  position: absolute;
 }
 .information-about-work__icon {
   background-color: #dfedff;
