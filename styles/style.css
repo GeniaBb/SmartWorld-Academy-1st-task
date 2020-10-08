@@ -457,6 +457,9 @@ a, a:active, a:hover, a:visited {
 .prising-plan__toggle-btn--left {
   border-radius: 25px 0 0 25px;
 }
+.prising-plan__toggle-btn--right {
+  border-radius: 0px 25px 25px 0px;
+}
 .prising-plan__icon {
   width: 75px;
   height: 75px;
