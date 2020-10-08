@@ -11,6 +11,15 @@ body {
   width: 1920px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+}
+
 p,
 h1,
 h2,
@@ -432,12 +441,15 @@ a, a:active, a:hover, a:visited {
   width: 343px;
   margin-right: 17px;
 }
+.prising-plan__information .text {
+  height: 69px;
+}
 .prising-plan__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 30px;
   width: 360px;
   height: 576px;
@@ -448,6 +460,14 @@ a, a:active, a:hover, a:visited {
 .prising-plan__card .btn {
   width: 165px;
   padding: 0;
+}
+.prising-plan__card li {
+  line-height: 15px;
+  height: 15px;
+  margin-top: 22px;
+}
+.prising-plan__card li:first-child {
+  margin-top: 30px;
 }
 .prising-plan__toggler {
   display: flex;
@@ -466,6 +486,7 @@ a, a:active, a:hover, a:visited {
   border-radius: 0px 25px 25px 0px;
 }
 .prising-plan__icon {
+  margin-top: 40px;
   width: 75px;
   height: 75px;
   border: 12px solid #dfedff;
@@ -488,10 +509,14 @@ a, a:active, a:hover, a:visited {
   border-bottom: 1px solid #e0e0e0;
 }
 .prising-plan__sign {
+  height: 24px;
+  display: block;
   font-family: Quicksand;
   font-weight: 500;
   color: #0f7bff;
   font-size: 32px;
+  margin-top: 27px;
+  margin-bottom: 38px;
 }
 .prising-plan__sign--dollar {
   font-size: 16px;
@@ -503,7 +528,21 @@ a, a:active, a:hover, a:visited {
 }
 
 .latest-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 152px 0px 127px 0px;
+}
+.latest-news__heading {
+  text-align: center;
+}
+.latest-news__heading h2 {
+  font-size: 32px;
+  margin-bottom: 39px;
+}
+.latest-news__heading .text {
+  width: 731px;
+  height: 42px;
 }
 .latest-news__text {
   padding: 40px 0px 25px 0px;
@@ -513,6 +552,23 @@ a, a:active, a:hover, a:visited {
   line-height: 36px;
   color: #0f7bff;
 }
+.latest-news__card {
+  display: flex;
+  margin-bottom: 40px;
+}
+.latest-news__card img {
+  margin-right: 30px;
+}
+.latest-news__card-content {
+  display: flex;
+  flex-direction: column;
+  width: 339px;
+}
+.latest-news__card-content h4 {
+  line-height: 28px;
+  margin-bottom: 26px;
+  font-size: 18px;
+}
 .latest-news__list-news {
   display: flex;
   margin-top: 48px;
@@ -521,6 +577,12 @@ a, a:active, a:hover, a:visited {
   width: 555px;
   height: 285px;
   margin-right: 30px;
+}
+.latest-news__list-news--bloc-one a {
+  display: block;
+  margin-top: 40px;
+  color: #0f7bff;
+  font-family: "Quicksand";
 }
 .latest-news__list-news__decoration-photo {
   background-image: url("../img/latest-news__decoration-photo.png");
@@ -545,16 +607,33 @@ a, a:active, a:hover, a:visited {
   align-items: center;
   justify-content: center;
 }
-.footer-bloc__one--head-text {
+.footer-bloc__head-text {
   margin-bottom: 25px;
   font-size: 32px;
   font-family: Quicksand;
   font-weight: 500;
   line-height: 36px;
 }
+.footer-bloc__heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 162px;
+}
 .footer-bloc__two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 131px;
   height: 492px;
   background-color: #0f7bff;
+}
+.footer-bloc__two h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 33px;
+  font-family: "Myriad Pro";
+  font-weight: 400;
 }
 .footer-bloc__btn {
   border: 2px solid #ffffff;
@@ -566,23 +645,67 @@ a, a:active, a:hover, a:visited {
   cursor: pointer;
   outline: none;
 }
-.footer-bloc__btn--one {
-  width: 392px;
-  height: 60px;
-  border-radius: 25px 0 0 25px;
-  background-color: #0f7bff;
-  color: #ffffff;
+.footer-bloc__btn--get-started {
+  width: 263px;
+  height: 76px;
+  border-radius: 5px;
 }
-.footer-bloc__btn--two {
+.footer-bloc__btn--get-started img {
+  margin-left: 25px;
+}
+.footer-bloc__btn--subscribe {
   width: 165px;
   height: 60px;
   border-radius: 0px 25px 25px 0px;
   background-color: #ffffff;
   color: #0f7bff;
 }
-.footer-bloc__information--navigation {
+.footer-bloc__control {
   display: flex;
-  margin-right: 10px;
+}
+.footer-bloc__subscribe {
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid #ffffff;
+  width: 392px;
+  height: 60px;
+  border-radius: 25px 0 0 25px;
+  background-color: #0f7bff;
+  color: #ffffff;
+  padding: 24px 0 24px 31px;
+}
+.footer-bloc__information {
+  border-top: 1px solid #ffffff;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: auto;
+}
+.footer-bloc__information .text {
+  color: #ffffff;
+}
+.footer-bloc__navigation {
+  display: flex;
+}
+.footer-bloc__navigation li {
+  margin-right: 30px;
+  color: #d8d8d8;
+}
+.footer-bloc__navigation li:hover {
+  color: #ffffff;
+}
+.footer-bloc__icon a {
+  margin-right: 15px;
+}
+.footer-bloc__icon path {
+  fill: #d8d8d8;
+}
+.footer-bloc__icon path:hover {
+  fill: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

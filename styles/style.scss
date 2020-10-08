@@ -23,6 +23,14 @@ body {
     width: 1920px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+}
 
 p,
 h1,
@@ -503,6 +511,11 @@ a, a:active, a:hover, a:visited {
     &__information {
         width: 343px;
         margin-right: 17px;
+        
+        .text {
+            // text-align: justify;
+            height: 69px;
+        }
     }
 
     &__card {
@@ -510,17 +523,27 @@ a, a:active, a:hover, a:visited {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: 30px;
         width: 360px;
         height: 576px;
         box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
         border-radius: 5px;
-        background-color: #ffffff;
+        background-color: $secondary-color;
 
         .btn {
             width: 165px;
             padding: 0;
+        }
+
+        li {
+            line-height: 15px;
+            height: 15px;
+            margin-top: 22px;
+
+            &:first-child {
+                margin-top: 30px;
+            }
         }
     }
     &__toggler {
@@ -544,6 +567,7 @@ a, a:active, a:hover, a:visited {
     }
 
     &__icon {
+        margin-top: 40px;
         width: 75px;
         height: 75px;
         border: 12px solid $icon-work-steps;
@@ -570,11 +594,14 @@ a, a:active, a:hover, a:visited {
     }
 
     &__sign {
+        height: 24px;
+        display: block;
         font-family: Quicksand;
         font-weight: 500;
         color: $primary-color;
         font-size: 32px;
-
+        margin-top: 27px;
+        margin-bottom: 38px;
         &--dollar {
             font-size: 16px;
         }
@@ -588,10 +615,23 @@ a, a:active, a:hover, a:visited {
 }
 
 .latest-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 152px 0px 127px 0px;
 
     &__heading {
+        text-align: center;
 
+        h2 {
+            font-size: 32px;
+            margin-bottom: 39px;
+        }
+
+        .text {
+            width: 731px;
+            height: 42px;
+        }
     }
 
     &__text {
@@ -604,6 +644,27 @@ a, a:active, a:hover, a:visited {
         
     }
 
+    &__card {
+        display: flex;
+        margin-bottom: 40px;
+        
+        img {
+            margin-right: 30px;
+        }
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+        width: 339px;
+
+        h4 {
+            line-height: 28px;
+            margin-bottom: 26px;
+            font-size: 18px;
+        }
+    }
+
     &__list-news {
         display: flex;
         margin-top: 48px;
@@ -612,14 +673,17 @@ a, a:active, a:hover, a:visited {
             width: 555px;
             height: 285px;
             margin-right: 30px;
+
+            a {
+                display: block;
+                margin-top: 40px;
+                color: $primary-color;
+                font-family: 'Quicksand'
+            }
         }
 
         &__decoration-photo {
             background-image: url('../img/latest-news__decoration-photo.png');
-        }
-
-        &--bloc-two {
-
         }
 
         &__all-photo {
@@ -652,19 +716,38 @@ a, a:active, a:hover, a:visited {
         align-items: center;
         justify-content: center;
 
-        &--head-text {
-            margin-bottom: 25px;
-            font-size: 32px;
-            font-family: Quicksand;
-            font-weight: 500;
-            line-height: 36px;
-            //добавь цвет шрифту
-        }
+    }
+
+    &__head-text {
+        margin-bottom: 25px;
+        font-size: 32px;
+        font-family: Quicksand;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        margin-right: 162px;
     }
 
     &__two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 131px;
         height: 492px;
         background-color: $primary-color;
+        
+        h2 {
+            color: $secondary-color;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 33px;
+            font-family: 'Myriad Pro';
+            font-weight: 400;
+        }
     }
 
     &__btn {
@@ -677,15 +760,17 @@ a, a:active, a:hover, a:visited {
         cursor: pointer;
         outline: none;
 
-        &--one {
-            width: 392px;
-            height: 60px;
-            border-radius: 25px 0 0 25px;
-            background-color: $primary-color;
-            color: $secondary-color;
+        &--get-started {
+            width: 263px;
+            height: 76px;
+            border-radius: 5px;
+
+            img {
+                margin-left: 25px;
+            }
         }
 
-        &--two {
+        &--subscribe {
             width: 165px;
             height: 60px;
             border-radius: 0px 25px 25px 0px;
@@ -694,15 +779,68 @@ a, a:active, a:hover, a:visited {
         }
     }
 
-    &__information {
+    &__control {
+        display: flex;
+    }
 
-        &--navigation {
-            display: flex;
-            margin-right: 10px;
+    &__subscribe {
+        font-family: inherit;
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+        border: 2px solid $secondary-color;
+        width: 392px;
+        height: 60px;
+        border-radius: 25px 0 0 25px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 24px 0 24px 31px;
+    }
+
+
+    &__information {
+        border-top: 1px solid $secondary-color;
+        height: 100px;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: auto;
+
+        .text {
+            color: $secondary-color;
         }
+
+
 
         &--icon {
 
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        
+        li {
+            margin-right: 30px;
+            color: #d8d8d8;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    &__icon {
+        a {
+            margin-right: 15px;
+        }
+        path {
+            fill: #d8d8d8; // Вынести в переменную
+            
+            &:hover {
+                fill: $secondary-color;
+            }
         }
     }
 }
