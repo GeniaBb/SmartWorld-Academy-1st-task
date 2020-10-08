@@ -7,79 +7,267 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="page-header">
-        <div class="page-header__wrapper">
-            <div class="logo">
-                AppSon
+    <div class="home-wrapper">
+        <div class="home">
+            <div class="home__wrapper">
+                <div class="logo">
+                    AppSon
+                </div>
+                <div class="sign-up-and-navigation-wrapper">
+                    <ul class="main-navigation">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <button class="btn btn--sign-up">Sign Up</button>
+                </div>
             </div>
-            <div class="sign-up-and-navigation-wrapper">
-                <ul class="main-navigation">
-                    <li>Home</li>
-                    <li>Features</li>
-                    <li>Pricing</li>
-                    <li>Pages</li>
-                </ul>
-                <button class="btn btn--sign-up">Sign Up</button>
+            <div class="product-description">
+                <h2 class="product-description__title">
+                    Best Desktop App for You
+                </h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="product-description__btns">
+                    <button class="btn btn--download">
+                        Download
+                    </button>
+                    <button class="btn btn--secondary">
+                        Free Trial
+                    </button>
+                </div>
+            </div>
+            <div class="phones">
+                <div class="phones__phone--side phones__phone">
+                    <div class="phones__sensors"></div>
+                    <div class="phones__phone-display phones__phone-display--one"></div>
+                </div>
+                <div class="phones__phone--center phones__phone">
+                    <div class="phones__sensors phones_sensors--center"></div>
+                    <div class="phones__phone-display phones__phone-display--two"></div>
+                </div>
+                <div class="phones__phone--side phones__phone">
+                    <div class="phones__sensors"></div>
+                    <div class="phones__phone-display phones__phone-display--three"></div>
+                </div>
             </div>
         </div>
-        <section class="product-description">
-            <h2>
-                Best Desktop App for You
-            </h2>
-            <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <footer>
-                <button class="btn btn--download">
-                    Download
-                </button>
-                <button class="btn btn--free-trial">
-                    Free Trial
-                </button>
-            </footer>
-        </section>
-        <div class="phones">
-            <div class="phones__phone--side phones__phone">
-                <div class="phones__phone-display phones__phone-display--one"></div>
-            </div>
-            <div class="phones__phone--center phones__phone">
-                <div class="phones__phone-display phones__phone-display--two"></div>
-            </div>
-            <div class="phones__phone--side phones__phone">
-                <div class="phones__phone-display phones__phone-display--three"></div>
-            </div>
-        </div>
-    </header>
+        <button class="btn home__arrow"></button>
+    </div>
+
     <div class="features">
         <div class="features__card">
             <div class="features__icon features__icon--analysis"></div>
-            <h3>Analysis</h3>
+            <h3 class="features__text">Analysis</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
         </div>
         <div class="features__card features__card--center">
             <div class="features__icon features__icon--clean-design"></div>
-            <h3>Clean Design</h3>
+            <h3 class="features__text">Clean Design</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
         </div>
         <div class="features__card">
             <div class="features__icon features__icon--messaging"></div>
-            <h3>Messaging</h3>
+            <h3 class="features__text">Messaging</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
         </div>
     </div>
     <div class="bloc-easy-messaging">
         <div class="bloc-easy-messaging__decorative">
-            <div class="bloc-easy-messaging__decorative--blue-square">
-                <div class="bloc-easy-messaging__decorative--photo-one">
-                    <div class="bloc-easy-messaging__decorative--photo-two"></div>
+            <div class="bloc-easy-messaging__blue-square">
+                <div class="bloc-easy-messaging__decorative-photo--one">
+                    <div class="bloc-easy-messaging__decorative-photo--two"></div>
                 </div>
             </div>
         </div>
         <div class="bloc-easy-messaging__text">
             <h3>Easy Messaging</h3>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text text__bloc-easy-messaging">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#">Read More <img src="./img/pointer.svg" alt="pointer" class="bloc-easy-messaging__text--pointer"></a>
         </div>
     </div>
+    <div class="bloc-keep-in-touch">
+        <div class="bloc-keep-in-touch__text">
+            <h3>Keep In Touch</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">Read More <img src="./img/pointer.svg" alt="pointer" class="bloc-keep-in-touch__text--pointer"></a>
+        </div>
+        <div class="bloc-keep-in-touch__decorative">
+            <div class="bloc-keep-in-touch__blue-square">
+                <div class="bloc-keep-in-touch__decorative-photo--one">
+                    <div class="bloc-keep-in-touch__decorative-photo--two"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information-about-work">
+        <h2 class="information-about-work__title">
+            <div class="information-about-work__title-decorate"></div>
+            <div class="information-about-work__title-decorate--right"></div>
+            How Does It Works?
+        </h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+        <div class="information-about-work__cards-wrapper">
+            <div class="information-about-work__decorative-line"></div>
+            <div class="information-about-work__card">
+                <div class="information-about-work__icon information-about-work__icon--account"></div>
+                <h3 class="information-about-work__card-title">Create An Account</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="information-about-work__card">
+                <div class="information-about-work__icon information-about-work__icon--email"></div>
+                <h3 class="information-about-work__card-title">Confirm Email</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+            <div class="information-about-work__card">
+                <div class="information-about-work__icon information-about-work__icon--results"></div>
+                <h3 class="information-about-work__card-title">See Results</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+        </div>
+    </div>
+    <div class="prising-plan">
+        <div class="prising-plan__information">
+            <h2>Pricing Plan</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+            <div class="prising-plan__toggler">
+                <button class="prising-plan__toggle-btn prising-plan__toggle-btn--left btn">Monthly</button>
+                <button class="prising-plan__toggle-btn prising-plan__toggle-btn--right btn btn--secondary">Yearly</button>
+            </div>
+        </div>
+        <div class="prising-plan__card">
+            <div class="prising-plan__icon prising-plan__icon--standard"><div></div></div>
+            <h3 class="prising-plan__title">Standard</h3>
+            <ul class="text">
+                <li>2gb Hosting</li>
+                <li>10 Custom Domain</li>
+                <li>SSD Hosting</li>
+                <li>50 gb Bandwith</li>
+                <li>Free Support</li>
+            </ul>
+            <span class="prising-plan__sign">
+                <span class=" prising-plan__sign--dollar">$</span>19.00    
+            </span>
+            <button class="btn">Try now</button>
+        </div>
+        <div class="prising-plan__card">
+            <div class="prising-plan__icon prising-plan__icon--premium"></div>
+            <h3 class="prising-plan__title">Premium</h3>
+            <ul class="text">
+                <li>2gb Hosting</li>
+                <li>10 Custom Domain</li>
+                <li>SSD Hosting</li>
+                <li>50 gb Bandwith</li>
+                <li>Free Support</li>
+            </ul>
+            <span class="prising-plan__sign">
+                <span class=" prising-plan__sign--dollar">$</span>19.00    
+            </span>
+            <button class="btn btn--secondary">Try now</button>
+        </div>
+    </div>
+    <div class="latest-news">
+        <div class="latest-news__heading">
+            <h2>
+                <div></div>
+                <div></div>
+                Latest News From Us
+            </h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="latest-news__list-news">
+            <div class="latest-news__list-news--bloc-one">
+                <img src="./img/latest-news__decoration-photo.png" alt="Cover for news">
+                <h3 class="latest-news__text">The master bedroom suite is phenomenally spacious</h3>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <a href="#">Continue Reading <img src="./img/pointer.svg" alt="pointer" class="latest-news__pointer"></a>
+            </div>
+            <div class="latest-news__list-news--bloc-two">
+                <div class="latest-news__card">
+                    <img src="./img/latest-news__all-photo_1.png" alt="Cover for news">
+                    <div class="latest-news__card-content">
+                        <h4>
+                            The master bedroom suite is phenomey<br>
+                            spacious
+                        </h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                        </p>  
+                    </div>              
+                </div>
+                <div class="latest-news__card">
+                    <img src="./img/latest-news__all-photo_2.png" alt="Cover for news">
+                    <div class="latest-news__card-content">
+                        <h4>
+                            The master bedroom suite is phenomey<br>
+                            spacious
+                        </h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                        </p>  
+                    </div>
+                </div>
+                <div class="latest-news__card">
+                    <img src="./img/latest-news__all-photo_3.png" alt="Cover for news">
+                    <div class="latest-news__card-content">
+                        <h4>
+                            The master bedroom suite is phenomey<br>
+                            spacious
+                        </h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<footer>
+    <div class="footer-bloc footer-bloc__one">
+        <div class="footer-bloc__heading">
+            <h3 class="footer-bloc__head-text">Try 30 Days Free Trial</h3>
+            <p class="text">No credit card required</p>
+        </div>
+        <button class="btn footer-bloc__btn--get-started">
+            Get Started
+            <img src="./img/get-started-arrow.svg" alt="Get started arrow">
+        </button>
+    </div>
+
+    <div class="footer-bloc footer-bloc__two">
+        <h2>AppSon</h2>
+        <div class="footer-bloc__control">
+            <input type="text" class="footer-bloc__subscribe" value="Enter Your Email">
+
+            <button class="footer-bloc__btn--subscribe btn">
+                Subscribe
+            </button>
+        </div>
+
+        <div class="footer-bloc__information">
+            <p class="text">© 2018 Copyright, All Rights Reserved by AppSon</p>
+    
+            <ul class="footer-bloc__navigation">
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+    
+            <div class="footer-bloc__icon">
+                <a href="https://google.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20"><g><g><path fill="#fff" d="M9.276-.002h-2.24c-1.714 0-2.945.378-3.693 1.135-.748.757-1.122 1.872-1.122 3.344v1.404c0 .371-.323.671-.722.671H.725c-.399 0-.722.301-.722.672v2.103c0 .372.323.672.722.672H1.5c.4 0 .722.3.722.672v8.657c0 .371.324.672.722.672H5.95c.398 0 .722-.3.722-.672v-8.657c0-.371.323-.672.722-.672H8.91c.398 0 .756-.3.797-.668l.24-2.11c.042-.37-.247-.669-.646-.669h-1.91c-.398 0-.721-.3-.721-.671V4.829c0-.259.012-.46.039-.601.026-.142.084-.281.176-.419.091-.137.24-.232.443-.285.205-.053.477-.079.816-.079h1.13c.4 0 .723-.3.723-.671V.67c0-.371-.323-.672-.722-.672z"/></g></g></svg>
+                </a>
+                <a href="https://google.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"><g><g><path fill="#d8d8d8" d="M17.469 2.26a6.608 6.608 0 0 1-.266.076c-.543.144-.592-.046-.2-.464.176-.188.331-.392.466-.612.303-.494.04-.71-.474-.479a7.42 7.42 0 0 1-.56.224c-.53.186-1.282-.096-1.755-.41C14.084.198 13.406 0 12.646 0c-1.064 0-1.97.394-2.72 1.181C9.174 1.968 8.8 2.92 8.8 4.037c0 .153.008.308.025.465.027.256-.384.441-.938.36a10.292 10.292 0 0 1-3.416-1.144A11.017 11.017 0 0 1 1.64 1.531c-.392-.42-.92-.384-1.067.183-.088.34-.131.693-.131 1.06A4.128 4.128 0 0 0 1.447 5.5c.348.401.295.634-.19.491-.485-.143-.84-.354-.84-.34v.025c0 .974.291 1.83.875 2.568.36.455.777.805 1.253 1.053.501.26.735.406.454.444a3.868 3.868 0 0 1-.875.018c-.2-.018-.236.42.068.914.242.391.551.736.928 1.034.383.303.796.52 1.239.653.538.16.646.455.166.756-1.187.748-2.501 1.122-3.942 1.122-.162 0-.317-.004-.465-.011-.256-.013-.084.224.412.497A10.272 10.272 0 0 0 5.56 16a10.77 10.77 0 0 0 3.847-.682c1.198-.454 2.222-1.062 3.072-1.825.85-.762 1.582-1.639 2.197-2.631a12.014 12.014 0 0 0 1.825-6.612c-.002-.146.363-.538.771-.94a8.25 8.25 0 0 0 .528-.571c.37-.442.206-.643-.331-.479z"/></g></g></svg>
+                </a>
+                <a href="https://google.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 19 14"><g><g><path fill="#d8d8d8" d="M18.997 6.996c0 1.567-.001 3.228-.332 4.749-.233 1.068-1.06 1.856-2.054 1.974-2.355.278-4.74.28-7.113.278-2.374.001-4.758 0-7.114-.278-.995-.118-1.82-.906-2.053-1.974C0 10.224 0 8.563 0 6.996 0 5.43.004 3.77.335 2.248.567 1.18 1.393.392 2.387.274c2.356-.278 4.74-.28 7.115-.278 2.373-.001 4.758 0 7.113.278.995.118 1.821.906 2.054 1.974.33 1.522.328 3.182.328 4.748zm-5.91-.193l-6.04-3.332v6.643l6.04-3.31z"/></g></g></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
