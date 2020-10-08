@@ -498,9 +498,11 @@ a, a:active, a:hover, a:visited {
 .prising-plan {
     display: flex;
     justify-content: center;
+    padding: 130px 0px 130px 0px;
 
     &__information {
         width: 343px;
+        margin-right: 17px;
     }
 
     &__card {
@@ -508,6 +510,8 @@ a, a:active, a:hover, a:visited {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
+        margin-left: 30px;
         width: 360px;
         height: 576px;
         box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
@@ -522,6 +526,7 @@ a, a:active, a:hover, a:visited {
     &__toggler {
         display: flex;
         width: 330px;
+        margin-top: 65px;
     }
 
     &__toggle-btn {
@@ -635,5 +640,69 @@ a, a:active, a:hover, a:visited {
 
     &__pointer {
         background-image: url('../img/pointer.svg');
+    }
+}
+
+.footer-bloc {
+    
+    &__one {
+        height: 336px;
+        background-color: $home-background-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--head-text {
+            margin-bottom: 25px;
+            font-size: 32px;
+            font-family: Quicksand;
+            font-weight: 500;
+            line-height: 36px;
+            //добавь цвет шрифту
+        }
+    }
+
+    &__two {
+        height: 492px;
+        background-color: $primary-color;
+    }
+
+    &__btn {
+        border: 2px solid $secondary-color;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        box-sizing: border-box;
+        cursor: pointer;
+        outline: none;
+
+        &--one {
+            width: 392px;
+            height: 60px;
+            border-radius: 25px 0 0 25px;
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+
+        &--two {
+            width: 165px;
+            height: 60px;
+            border-radius: 0px 25px 25px 0px;
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+
+    &__information {
+
+        &--navigation {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        &--icon {
+
+        }
     }
 }

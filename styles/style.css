@@ -426,15 +426,19 @@ a, a:active, a:hover, a:visited {
 .prising-plan {
   display: flex;
   justify-content: center;
+  padding: 130px 0px 130px 0px;
 }
 .prising-plan__information {
   width: 343px;
+  margin-right: 17px;
 }
 .prising-plan__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  margin-left: 30px;
   width: 360px;
   height: 576px;
   box-shadow: 0 0 68px rgba(165, 165, 165, 0.25);
@@ -448,6 +452,7 @@ a, a:active, a:hover, a:visited {
 .prising-plan__toggler {
   display: flex;
   width: 330px;
+  margin-top: 65px;
 }
 .prising-plan__toggle-btn {
   width: 165px;
@@ -531,6 +536,53 @@ a, a:active, a:hover, a:visited {
 }
 .latest-news__pointer {
   background-image: url("../img/pointer.svg");
+}
+
+.footer-bloc__one {
+  height: 336px;
+  background-color: #f5fcfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-bloc__one--head-text {
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-family: Quicksand;
+  font-weight: 500;
+  line-height: 36px;
+}
+.footer-bloc__two {
+  height: 492px;
+  background-color: #0f7bff;
+}
+.footer-bloc__btn {
+  border: 2px solid #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+.footer-bloc__btn--one {
+  width: 392px;
+  height: 60px;
+  border-radius: 25px 0 0 25px;
+  background-color: #0f7bff;
+  color: #ffffff;
+}
+.footer-bloc__btn--two {
+  width: 165px;
+  height: 60px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: #ffffff;
+  color: #0f7bff;
+}
+.footer-bloc__information--navigation {
+  display: flex;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
