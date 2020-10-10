@@ -59,6 +59,9 @@ a, a:active, a:hover, a:visited {
   color: #ffffff;
   height: 50px;
 }
+.btn:hover {
+  background-color: #6eafff;
+}
 .btn--sign-up {
   padding: 0 55px;
   text-transform: uppercase;
@@ -74,6 +77,9 @@ a, a:active, a:hover, a:visited {
   padding: 0 54px;
   margin-left: 30px;
 }
+.btn--secondary:hover {
+  background-color: #e6e6e6;
+}
 .btn__up {
   position: fixed;
   bottom: 33px;
@@ -87,6 +93,9 @@ a, a:active, a:hover, a:visited {
   height: 45px;
   opacity: 0;
   transition: 0.3s;
+}
+.btn__up:hover {
+  background-color: #e6e6e6;
 }
 
 .btn__up.active {
@@ -132,6 +141,9 @@ a, a:active, a:hover, a:visited {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 3;
+}
+.home__arrow:hover {
+  background-color: #e6e6e6;
 }
 
 .logo {
@@ -803,6 +815,9 @@ a, a:active, a:hover, a:visited {
   border-radius: 0px 25px 25px 0px;
   background-color: #ffffff;
   color: #0f7bff;
+}
+.footer-bloc__btn--subscribe:hover {
+  background-color: #e6e6e6;
 }
 .footer-bloc__control {
   display: flex;

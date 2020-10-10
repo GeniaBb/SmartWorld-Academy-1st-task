@@ -15,6 +15,9 @@ $side-phone-side-margin: -22px;
 $features-card-margin: 15px;
 $icon-work-steps: #dfedff;
 $carousel-card-height: 215px;
+$primary-color-hover: #6eafff;
+$secondary-color-hover: #e6e6e6;
+
 
 body {
     padding: 0;
@@ -72,6 +75,10 @@ a, a:active, a:hover, a:visited {
     font-weight: 400;
     color: $secondary-color;
     height: 50px;
+    
+    &:hover {
+        background-color: $primary-color-hover;
+    }
 
     &--sign-up {
         padding: 0 55px;
@@ -89,6 +96,10 @@ a, a:active, a:hover, a:visited {
         border: 2px solid $primary-color;
         padding: 0 54px;
         margin-left: 30px;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+        }
     }
 
     &__up {
@@ -104,6 +115,10 @@ a, a:active, a:hover, a:visited {
         height: 45px;
         opacity: 0;
         transition: 0.3s;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+        }
     }
 }
 
@@ -151,6 +166,10 @@ a, a:active, a:hover, a:visited {
         background-repeat: no-repeat;
         background-position: center;
         z-index: 3;
+
+        &:hover {
+            background-color: $secondary-color-hover;
+        }
     }
 }
 
@@ -948,6 +967,10 @@ a, a:active, a:hover, a:visited {
             border-radius: 0px 25px 25px 0px;
             background-color: $secondary-color;
             color: $primary-color;
+
+            &:hover {
+                background-color: $secondary-color-hover;
+            }
         }
     }
 
