@@ -565,6 +565,7 @@ a, a:active, a:hover, a:visited {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 29px;
+  background-size: 66%;
 }
 .prising-plan__icon--standard {
   background-image: url("../img/pricing-plan_standard.svg");
@@ -988,10 +989,6 @@ a, a:active, a:hover, a:visited {
     background-size: contain;
     top: 15px;
     left: 10px;
-  }
-
-  .prising-plan__icon {
-    background-size: 66%;
   }
 
   * {
