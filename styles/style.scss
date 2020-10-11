@@ -105,7 +105,7 @@ a, a:active, a:hover, a:visited {
         color: $primary-color;
         border: 2px solid $primary-color;
         padding: 0 54px;
-        margin-left: 30px;
+        margin-left: 8px;
 
         &:hover {
             background-color: $secondary-color-hover;
@@ -543,13 +543,21 @@ a, a:active, a:hover, a:visited {
             width: 100%;
         }
 
+        h3 {
+            margin-bottom: 29px;
+        }
+
+        p {
+            width: 342px;
+            height: 41px;
+        }
     }
 
     &__decorative-line {
         width: 680px;
         z-index: 0;
         height: 0;
-        border: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
         position: absolute;
         top: 54px;
         left: 50%;
@@ -564,6 +572,7 @@ a, a:active, a:hover, a:visited {
         background-repeat: no-repeat;
         background-position: center;
         z-index: 1;
+        margin-bottom: 30px;
         
         &__card-title {
             margin: 31px 0 29px;
@@ -1086,8 +1095,10 @@ a, a:active, a:hover, a:visited {
     .bloc-keep-in-touch,
     .latest-news__list-news,
     .prising-plan,
-    .features {
+    .features,
+    .page-footer > div {
         flex-direction: column;
+        padding: 0 15px;
     }
 
     .home {
@@ -1097,6 +1108,13 @@ a, a:active, a:hover, a:visited {
     .features {
         align-items: center;
         height: auto;
+
+        &__card {
+            
+            .text {
+                padding: 0 15px;
+            }
+        }
     }
 
     .reviews__decoration-photo {
@@ -1121,7 +1139,36 @@ a, a:active, a:hover, a:visited {
         }
 
         &__blue-square {
-            display: none;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            height: 200px;
+            position: relative;
+            left: 20%;
+        }
+
+    
+        &__decorative-photo {
+
+
+            &--one {
+                top: 23px;
+                left: 54px;
+                width: 182px;
+                height: 342px;
+                background-size: inherit;
+                background-repeat: no-repeat;
+            }
+
+            &--two {
+                width: 161px;
+                height: 290px;
+                left: 62px;
+                position: relative;
+                top: 2px;
+                background-size: inherit;
+                background-repeat: no-repeat;
+                margin-left: 0;
+            }
         }
     }
 
@@ -1175,12 +1222,21 @@ a, a:active, a:hover, a:visited {
         margin-right: 0;
     }
 
+    .footer-bloc__control {
+        height: 35px;
+    }
+
     .footer-bloc__subscribe {
         width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        padding-left: 9px;
     }
 
     .footer-bloc__btn--subscribe.btn {
         width: 60%;
+        height: 100%;
     }
 
     .reviews__carousel-wrapper {

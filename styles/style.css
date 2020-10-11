@@ -79,7 +79,7 @@ a, a:active, a:hover, a:visited {
   color: #0f7bff;
   border: 2px solid #0f7bff;
   padding: 0 54px;
-  margin-left: 30px;
+  margin-left: 8px;
 }
 .btn--secondary:hover {
   background-color: #e6e6e6;
@@ -464,11 +464,18 @@ a, a:active, a:hover, a:visited {
 .information-about-work__card .text.text {
   width: 100%;
 }
+.information-about-work__card h3 {
+  margin-bottom: 29px;
+}
+.information-about-work__card p {
+  width: 342px;
+  height: 41px;
+}
 .information-about-work__decorative-line {
   width: 680px;
   z-index: 0;
   height: 0;
-  border: 1px solid #0f7bff;
+  border-top: 1px solid #0f7bff;
   position: absolute;
   top: 54px;
   left: 50%;
@@ -482,6 +489,7 @@ a, a:active, a:hover, a:visited {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
+  margin-bottom: 30px;
 }
 .information-about-work__icon__card-title {
   margin: 31px 0 29px;
@@ -918,8 +926,10 @@ a, a:active, a:hover, a:visited {
 .bloc-keep-in-touch,
 .latest-news__list-news,
 .prising-plan,
-.features {
+.features,
+.page-footer > div {
     flex-direction: column;
+    padding: 0 15px;
   }
 
   .home {
@@ -929,6 +939,9 @@ a, a:active, a:hover, a:visited {
   .features {
     align-items: center;
     height: auto;
+  }
+  .features__card .text {
+    padding: 0 15px;
   }
 
   .reviews__decoration-photo {
@@ -955,7 +968,31 @@ a, a:active, a:hover, a:visited {
   }
   .bloc-keep-in-touch__blue-square,
 .bloc-easy-messaging__blue-square {
-    display: none;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+    left: 20%;
+  }
+  .bloc-keep-in-touch__decorative-photo--one,
+.bloc-easy-messaging__decorative-photo--one {
+    top: 23px;
+    left: 54px;
+    width: 182px;
+    height: 342px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+  }
+  .bloc-keep-in-touch__decorative-photo--two,
+.bloc-easy-messaging__decorative-photo--two {
+    width: 161px;
+    height: 290px;
+    left: 62px;
+    position: relative;
+    top: 2px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    margin-left: 0;
   }
 
   .information-about-work {
@@ -1000,12 +1037,21 @@ a, a:active, a:hover, a:visited {
     margin-right: 0;
   }
 
+  .footer-bloc__control {
+    height: 35px;
+  }
+
   .footer-bloc__subscribe {
     width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 9px;
   }
 
   .footer-bloc__btn--subscribe.btn {
     width: 60%;
+    height: 100%;
   }
 
   .reviews__carousel-wrapper {
